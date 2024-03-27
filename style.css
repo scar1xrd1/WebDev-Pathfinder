@@ -1,21 +1,104 @@
+.header{
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(1px);
+    background: transparent;
+    box-shadow: 0 0 10px 0px #c4569f85, 0 0 20px 5px #660bbb73,  0 0 30px 10px #2521f373; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0 50px;
+    transition: 100ms ease;
+    z-index: 100;
+}
+.header:hover{
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px 0px #c4569fbd, 0 0 30px 10px #660bbbaf,  0 0 40px 20px #2521f3b0; 
+}
+
+.darknessbg{
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100vh;
+    background: #00000073;
+    z-index: -1;
+}
+
+#btest{
+    backdrop-filter: blur(1px);
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 0 0 10px 0px #c4569f85, 0 0 20px 5px #660bbb73,  0 0 30px 10px #2521f373; 
+    border-radius: 15px;
+    background: transparent;
+    padding: 20px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Jost;
+    cursor: pointer;
+    transition: 100ms ease;
+}
+#btest:hover{
+    box-shadow: 0 0 20px 0px #c4569fbd, 0 0 30px 10px #660bbbaf,  0 0 40px 20px #2521f3b0; 
+    backdrop-filter: blur(5px);
+}
+
+.header-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+
+.header-list-element{
+    font-family: Jost;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 100ms ease;
+    opacity: 0.5;
+}
+.header-list-element:hover{
+    border-bottom: 2px solid #fff;
+    opacity: 1;
+}
+
+.body-content{
+    padding-top: 55px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #000;
+    background-size: cover;
+}
+
+*{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: Inter;
+}
 
 @font-face {
     font-family: Inter;
     src: url(fonts/Inter.ttf);
 }
-
-
-
-
-
-
-
-body {
-  font: 1em 'PT Sans', sans-serif;
-  background-color: #eee;
-  
-  
-}
+@font-face {
+    font-family: Jost;
+    src: url(fonts/Jost.ttf);
 
 .block {
   width: 400px;
@@ -75,4 +158,3 @@ body {
   opacity: 1;
   margin-bottom: 0;
   visibility: visible;
-}
