@@ -5,24 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-...">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="darknessbg"></div>
     <header class="header">
         <ul class="header-list">
-            <li id="hEl1" class="header-list-element">тесты</li>
-            <li id="hEl2" class="header-list-element">раздел 2</li>
-            <li id="hEl3" class="header-list-element">раздел 3</li>
+            <li id="hl1" class="header-list-element welcome-page-element"><i class="fa-solid fa-w wpe"></i></li>
+            <li id="hl2" class="header-list-element"><i class="fas fa-home"></i> главная</li>
+            <li id="hl3" class="header-list-element"><i class="fa-solid fa-book"></i> курсы</li>
         </ul>
+        <div class="user-nav" id="non-authorized"><button id="login-button" class="non-auth-login"><i
+                    class="fa-regular fa-user"></i>Войти</button><button id="reg-button" class="non-auth-reg"><i
+                    class="fa-regular fa-address-card wpe"></i>Зарегистрироваться</button></div>
+        <div class="user-nav" id="authorized"></div>
     </header>
     <div class="body-content">
-        <button id="btest">КартинкА</button>
+        <h1 class="welcome-text">Добро пожаловать в <span class="welcome-text-circled">WebDev
+                Pathfinder!</span><br><span class="welcome-text-smaller">Сайт, который поможет освоить
+                веб-разработку</span></h1>
+
+        <h1 class="welcome-languages"><svg class="wmax" fill="#ffffff" height="250px" width="250px" version="1.1"
+                id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 463 463" xml:space="preserve" stroke="#ffffff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M455.5,348H447V99.5c0-17.369-14.131-31.5-31.5-31.5h-368C30.131,68,16,82.131,16,99.5V348H7.5 c-4.142,0-7.5,3.358-7.5,7.5v16C0,384.458,10.542,395,23.5,395h416c12.958,0,23.5-10.542,23.5-23.5v-16 C463,351.358,459.642,348,455.5,348z M31,99.5C31,90.402,38.402,83,47.5,83h368c9.098,0,16.5,7.402,16.5,16.5V348H31V99.5z M448,371.5c0,4.687-3.813,8.5-8.5,8.5h-416c-4.687,0-8.5-3.813-8.5-8.5V363h169.025c-0.011,0.166-0.025,0.331-0.025,0.5 c0,4.142,3.358,7.5,7.5,7.5h80c4.142,0,7.5-3.358,7.5-7.5c0-0.169-0.014-0.334-0.025-0.5H448V371.5z">
+                                </path>
+                                <path
+                                    d="M407.5,100h-352c-4.142,0-7.5,3.358-7.5,7.5v216c0,4.142,3.358,7.5,7.5,7.5h352c4.142,0,7.5-3.358,7.5-7.5v-216 C415,103.358,411.642,100,407.5,100z M400,316H63V115h337V316z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div class="welcome-icons"><i class="fa-brands fa-html5"></i><i class="fa-brands fa-js"></i><i
+                    class="fa-brands fa-css3-alt"></i></div>
+
+        </h1>
+        <button class="welcome-button"></i>НАЧАТЬ</button>
     </div>
 
-    <p class="block">Программирование — это процесс создания компьютерных программ для решения различных задач. <span
+    <!-- <p class="block">Программирование — это процесс создания компьютерных программ для решения различных задач. <span
             class="tooltip"
             data-title="Практика программирования играет ключевую роль в умении решать задачи!">Практика</span>
         программирования требует постоянного обучения и <span class="tooltip"
@@ -32,7 +65,7 @@
         используют различные языки программирования для создания программ. Программирование также способствует развитию
         абстрактного мышления и логического мышления, что делает его ценным навыком в различных сферах жизни. Освоив
         программирование, вы можете создавать программы, автоматизировать задачи и даже реализовывать свои творческие
-        идеи в виде программного кода. Не бойтесь экспериментировать, учиться и применять новые знания в практике!</p>
+        идеи в виде программного кода. Не бойтесь экспериментировать, учиться и применять новые знания в практике!</p> -->
     <script src="script.js"></script>
 </body>
 
