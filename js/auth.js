@@ -12,24 +12,40 @@ class User {
 }
 
 var users = []
-var currentUser = new User("asd", "asd")
+var currentUser = "none"
 
 function saveData() {
-    var currentUserJSON = JSON.stringify(currentUser)
-    localStorage.setItem('currentUser', currentUserJSON)
+    var usersJSON = JSON.stringify(users)
+
+    localStorage.setItem('users', usersJSON)
+
+    if (currentUser != "none") {
+        var currentUserJSON = JSON.stringify(currentUser)
+        localStorage.setItem('currentUser', currentUserJSON)
+    }
 }
 
 function loadData() {
+    var usersData = localStorage.getItem('users')
     var currentUserData = localStorage.getItem('currentUser')
-    if (currentUserData) { currentUser = JSON.parse(currentUserData) }
+
+    if (usersData) { users = JSON.parse(usersData) }
+    if (currentUserData != "none") { currentUser = JSON.parse(currentUserData) }
 }
 
 $(document).ready(function () {
-    $('#reg').hide()
-    $('#form-forgot').hide()
+    $('#form-forgot, #reg, #non-authorized').hide()
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem('currentUser')) {
+        loadData()
+        currentUser = new User("asd", "asd")
+        saveData()
+    }
+
+    if (authMethod == 'reg') { switchAuthMethod() }
+
     var container = document.getElementById('notification-container');
 
     loadData()
@@ -71,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 currentUser = users[getUserIndex($('#log-login').val().replace(/\s/g, ""))]
                                 saveData()
                                 resetInputs()
+                                localStorage.setItem('isAuthorized', "true")
                                 this.submit()
                             }
                             else { createNotification("Неверный пароль") }
@@ -94,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             users.push(currentUser)
                             saveData()
                             resetInputs()
+                            localStorage.setItem('isAuthorized', "true")
                             this.submit()
                         }
                         else { createNotification("Пароли не совпадают") }

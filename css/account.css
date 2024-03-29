@@ -1,0 +1,13 @@
+*{
+    color: #fff;
+    font-family: Inter;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter.ttf);
+}
+@font-face {
+    font-family: Jost;
+    src: url(/fonts/Jost.ttf);
+}
