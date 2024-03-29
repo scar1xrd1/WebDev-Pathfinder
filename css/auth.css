@@ -1,0 +1,161 @@
+.auth-form{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 700px;
+    width: 500px;
+    background: #ff5100;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 1px #ff5100;
+}
+
+.auth-input{
+    background: 0;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    outline: 0;
+    transition: 100ms ease;
+}
+.auth-input:focus{
+    outline: 5px solid #892b0084;
+}
+.auth-input:focus::placeholder{
+    padding-left: 20px;
+}
+.auth-input::placeholder{
+    color: #000;
+    font-weight: 600;
+    transition: 100ms ease;
+}
+
+.form-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    gap: 15px;
+}
+
+.auth-forgot{
+    font-size: 20px;
+    cursor: pointer;
+}
+.auth-forgot:active{
+    scale: 0.95;
+}
+
+.auth-button{
+    width: 300px;
+    height: 55px;
+    border-radius: 20px;
+    background: #111;
+    color: #ff5100;
+    border: 0;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 100ms ease;
+}
+.auth-button:hover{
+    background: #222;
+}
+.auth-button:active{
+    background: #444;
+    scale: 0.95;
+}
+
+.hello{
+    position: absolute;
+    top: 20px;
+    color: #111;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.bigger{
+    font-size: 30px;
+    font-weight: 800;
+}
+.lower{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-svg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.7;
+    cursor: pointer;
+    width: 50px;
+}
+
+#forgot-svg{
+    bottom: 0;
+    top: auto;
+}
+
+.notification {
+    background-color: #ff5100;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    color: #111;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    font-family: Code;
+}
+
+.notification.hidden {
+    opacity: 0;
+}
+
+#notification-container{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: auto;
+}
+
+::selection{
+    background: #111;
+    color: #ff5100;
+}
+
+svg {
+   height: 75px; 
+   margin-right: 20px;
+   width: 60px;
+}
+
+body{
+    background: #111;
+    position: relative;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+    user-select: none;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter.ttf);
+}
+@font-face {
+    font-family: Code;
+    src: url(/fonts/Code.ttf);
+}
