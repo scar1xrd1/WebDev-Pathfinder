@@ -244,3 +244,20 @@ body{
   margin-bottom: 0;
   visibility: visible;
 }
+
+.vertical-menu {
+    margin-top: 80px;
+    width: 300px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color: #eeeeee00; /* Grey background color */
+    color: #fff; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}

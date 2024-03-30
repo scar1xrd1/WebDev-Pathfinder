@@ -1,0 +1,89 @@
+.body-content
+{
+    padding-top: 65px;
+    max-width: 1300px;
+    width: 1300px;
+    position: fixed;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.select-cource
+{
+    padding-top: 65px;
+    margin-top: 40%;
+    max-width: 1300px;
+    width: 1300px;
+    position: fixed;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    
+}
+
+.cource-container
+{
+    padding-top: 65px;
+    margin-top: 70%;
+    max-width: 1300px;
+    width: 1300px;
+    position: fixed;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    transform: translateX(-50%);
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: Jost;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+a:hover
+{
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+}
+
+
+@-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0)
+    }
+    50% {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+  }
+  
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0)
+    }
+    50% {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+  }
