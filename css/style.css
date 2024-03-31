@@ -1,14 +1,12 @@
 .body-content{
     padding-top: 65px;
     max-width: 1300px;
-    width: 1300px;
-    position: fixed;
-    left: 50%;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(-50%);
 }
 
 .welcome-text{
@@ -40,6 +38,7 @@
     width: 400px;
     padding: 0px 30px;
     margin-top: 30px;
+    margin-bottom: 100px;
     color: #000;
     background: #fff;
     cursor: pointer;
@@ -69,6 +68,20 @@
     top: 328px;
     gap: 20px;
     display: flex;
+}
+
+.welcome-br1{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    .welcome-br1{
+        display: block;
+    }
+
+    .welcome-icons{
+        top: 390px;
+    }
 }
 
 a{

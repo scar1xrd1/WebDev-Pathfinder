@@ -28,3 +28,19 @@ else {
 $('#authorized').click(function () {
     window.location.replace('account.html')
 })
+
+$('document').ready(function () {
+    $('#hlmOpened, #burger').hide()
+
+    $('#hlmClosed').click(function () {
+        $('#burger').fadeIn(100)
+        $('#hlmClosed').hide()
+        $('#hlmOpened').show()
+    })
+
+    $('#hlmOpened').click(function () {
+        $('#burger').fadeOut(100)
+        $('#hlmClosed').show()
+        $('#hlmOpened').hide()
+    })
+})
